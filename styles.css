@@ -407,7 +407,8 @@ h3 {
 
 .hero-visual {
   position: relative;
-  min-height: 520px;
+  align-self: center;
+  aspect-ratio: 1717 / 916;
   margin: 0;
   overflow: hidden;
   background: var(--primary-deep);
@@ -427,8 +428,8 @@ h3 {
 .hero-visual img {
   width: 100%;
   height: 100%;
-  min-height: 520px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 .visual-lines {
@@ -1109,27 +1110,6 @@ h3 {
   object-position: center;
 }
 
-.qr-card figcaption {
-  margin-top: 18px;
-  text-align: center;
-}
-
-.qr-card figcaption strong,
-.qr-card figcaption span {
-  display: block;
-}
-
-.qr-card figcaption strong {
-  color: var(--primary-deep);
-  font-size: 18px;
-}
-
-.qr-card figcaption span {
-  margin-top: 5px;
-  color: var(--muted);
-  font-size: 12px;
-}
-
 .site-footer {
   padding: 22px 0;
   color: #d9e4ef;
@@ -1223,11 +1203,11 @@ html.js .reveal.is-visible {
   }
 
   .hero-visual {
-    min-height: 470px;
+    min-height: 0;
   }
 
   .hero-visual img {
-    min-height: 470px;
+    min-height: 0;
   }
 
   .split-heading {
@@ -1352,7 +1332,7 @@ html.js .reveal.is-visible {
 
   .hero-visual,
   .hero-visual img {
-    min-height: 390px;
+    min-height: 0;
   }
 
   .metric-grid {
@@ -1491,7 +1471,7 @@ html.js .reveal.is-visible {
 
   .hero-visual,
   .hero-visual img {
-    min-height: 330px;
+    min-height: 0;
   }
 
   .metric-card {
