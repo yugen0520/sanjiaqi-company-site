@@ -271,16 +271,21 @@ h3 {
 .hero-grid {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(560px, 1.2fr);
+  grid-template-columns: minmax(360px, 42%) minmax(0, 58%);
   align-items: stretch;
-  gap: 32px;
+  gap: 0;
 }
 
 .hero-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: 44px;
+  padding-left: max(24px, calc((100vw - var(--content)) / 2));
   padding-block: 16px;
 }
 
@@ -319,13 +324,13 @@ h3 {
 .hero h1 {
   max-width: 700px;
   margin-bottom: 16px;
-  font-size: 36px;
+  font-size: 30px;
   letter-spacing: 0;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .hero h1 strong {
-  display: inline;
+  display: block;
   color: var(--primary);
 }
 
@@ -408,7 +413,7 @@ h3 {
 
 .hero-visual {
   position: relative;
-  min-height: 340px;
+  min-height: 480px;
   margin: 0;
   overflow: hidden;
   background: var(--primary-deep);
@@ -1193,8 +1198,15 @@ html.js .reveal.is-visible {
     grid-template-columns: 1fr;
   }
 
+  .hero-grid {
+    width: min(var(--content), calc(100% - 48px));
+    margin: 0 auto;
+    gap: 42px;
+  }
+
   .hero-copy {
     max-width: 760px;
+    padding-inline: 0;
   }
 
   .hero-visual {
