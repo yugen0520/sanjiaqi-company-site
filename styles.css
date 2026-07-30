@@ -272,9 +272,9 @@ h3 {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 0.94fr) minmax(440px, 1.06fr);
+  grid-template-columns: minmax(0, 0.8fr) minmax(560px, 1.2fr);
   align-items: center;
-  gap: 58px;
+  gap: 32px;
 }
 
 .eyebrow {
