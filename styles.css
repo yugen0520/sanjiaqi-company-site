@@ -526,6 +526,10 @@ h3 {
   color: var(--muted);
 }
 
+#services-title {
+  white-space: nowrap;
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -703,6 +707,10 @@ h3 {
 
 .delivery-intro h2 {
   color: var(--white);
+}
+
+.delivery-intro h2 span {
+  display: block;
 }
 
 .delivery-intro > p:last-child {
@@ -1242,6 +1250,10 @@ html.js .reveal.is-visible {
 
   .split-heading > p {
     max-width: 700px;
+  }
+
+  #services-title {
+    white-space: normal;
   }
 
   .delivery-intro {
